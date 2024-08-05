@@ -1,0 +1,129 @@
+body {
+  font-family: sans-serif;
+  margin: 0 10%;
+}
+
+.container {
+  border: 2px solid #a2a2a6;
+  padding: 5px 10px 10px 10px;
+  margin: 10px auto;
+}
+
+.container-heading {
+  padding: 5px 0 10px 0;
+  margin: 0;
+}
+
+.dark-mode {
+  color: #fff;
+  background-color: #000;
+}
+
+#dark-button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  
+}
+
+/*----------Color Swatches----------*/
+
+#color-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.color-panel {
+  width: 125px;
+  height: 125px;
+  color: #f8f8f2;
+}
+
+.color-panel p {
+  margin: auto;
+  padding-top: 25%;
+  padding-left: 5%;
+}
+
+.background {
+  background-color: #282a36;
+}
+
+.comment {
+  background-color: #6272a4;
+}
+
+.selection {
+  background-color: #44475a;
+}
+
+.foreground {
+  background-color: #f8f8f2;
+  color: #000;
+}
+
+/*----------Fonts----------*/
+
+#font-container {
+  width: 100%;
+}
+
+.font-panel {
+  display: block;
+}
+
+.font-label {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.jetbrains {
+  font-family: JetBrains Mono;
+}
+
+.ptsans {
+  font-family: PT Sans;
+}
+
+.regular {
+  font-style: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/*----------Text Styles----------*/
+
+.text-panel ul {
+  list-style: none;
+}
+
+.text-panel h1 {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "JetBrains Mono", sans-serif;
+}
+
+.text-panel h2 {
+  font-weight: 500;
+  font-size: 26px;
+  font-family: "JetBrains Mono", sans-serif;
+}
+
+.text-panel p {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+}
+
+
