@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Style Guide</h1>
+    <button id="dark-button" onclick="darkToggle();addHumor()">Shield your eyes</button>
+    <div class="container">
+      <h2 class="container-heading">Colors</h2>
+      <div id="color-container">
+        <div class="color-panel background">
+          <p>#282A36<br>background</p>
+        </div>
+        <div class="color-panel comment">
+          <p>#6272A4<br>comment</p>
+        </div>
+        <div class="color-panel selection">
+          <p>#44475A<br>selection</p>
+        </div>
+        <div class="color-panel foreground">
+          <p>#F8F8F2<br>foreground</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="container-heading">Fonts</h2>
+      <div id="font-container">
+        <div class="font-panel">
+          <p class="font-label jetbrains">JetBrains Mono</p>
+          <p class="jetbrains regular">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+          <p class="jetbrains bold">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+          <p class="jetbrains italic">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div class="font-panel">
+          <p class="font-label ptsans">PT Sans</p>
+          <p class="ptsans regular">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+          <p class="ptsans bold">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+          <p class="ptsans italic">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="container-heading">Text Styles</h2>
+      <div class="text-container">
+        <div class="text-panel">
+          <h1>H1: Main page heading</h1>
+          <ul>
+            <li>Font-weight: 700 (bold)</li>
+            <li>Font-size: 30px</li>
+            <li>Font-family: JetBrains Mono</li>
+          </ul>
+        </div>
+        <div class="text-panel">
+          <h2>H2: Subheading</h2>
+          <ul>
+            <li>Font-weight: 500</li>
+            <li>Font-size: 26px</li>
+            <li>Font-family: JetBrains Mono</li>
+          </ul>
+        </div>
+        <div class="text-panel">
+          <p>P: Paragraph text</p>
+          <ul>
+            <li>Font-weight: 400 (regular)</li>
+            <li>Font-size: 18px</li>
+            <li>Font-family: PT Sans</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
