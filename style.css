@@ -1,13 +1,174 @@
-* {
-	border: 0;
-	box-sizing: border-box;
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100%;
+	color: var(--font-color);
+}
+
+:root {
+	--spacing-1: 0.5rem;
+	--spacing-2: 0.75rem;
+	--spacing-3: 1rem;
+	--spacing-4: 1.5rem;
+
+	--border-radius: 0.75rem;
+
+	--font-color: #F8F8F2;
+	--bg-color: #282A36;
+	--current-line-color: #44475A;
+	--comment-color: #6272A4;
+	--cyan: #8BE9FD;
+	--green: #50FA7B;
+	--orange: #FFB86C;
+	--pink: #FF79C6;
+	--purple: #BD93F9;
+	--red: #FF5555;
+	--yellow: #F1FA8C;
+}
+
+h2 {
+	font-family: JetBrains Mono, sans-serif;
 	margin: 0;
-	outline: 0;
-	padding: 0;
+	margin-bottom: var(--spacing-2);
 }
 
 body {
-	color: #f8f8f2;
 	font-family: JetBrains Mono, sans-serif;
-	background-color: #282a36;
+	margin: 0;
+	padding: 0 var(--spacing-3);
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg-color);
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	padding: var(--spacing-3) 0;
+}
+
+.nav-items {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	align-items: center;
+	margin: 0;
+	margin-left: auto;
+}
+
+.nav-item {
+	margin-right: var(--spacing-3);
+}
+
+.pfp {
+	width: 300px;
+	border-radius: var(--border-radius);
+	flex-shrink: 0;
+	margin-left: auto;
+}
+
+.intro-container {
+	display: flex;
+}
+
+.intro-text-container {
+	margin-right: var(--spacing-3);
+}
+
+/* START HERE */
+.project-image {
+	width: 50%;
+}
+
+.project-title h3 {
+	display: inline;
+}
+
+details {
+	cursor: pointer;
+}
+
+summary {
+	list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+footer {
+	margin-top: auto;
+	padding: var(--spacing-2) 0;
+	text-align: center;
+}
+
+/* START HERE */
+section {
+	padding: var(--spacing-3) 0;
+}
+
+.icon {
+	font-size: 2em;
+	color: var(--font-color);
+	margin: 0 var(--spacing-1);
+}
+
+a {
+	color: var(--font-color);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+#logo {
+	margin: 0;
+}
+
+#skills-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#skills-container > * {
+	font-size: 2em;
+	width: 2em;
+	margin-top: var(--spacing-1);
+}
+
+i {
+	font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.about-me-container {
+		flex-direction: column;
+	}
+}
+
+
+/* ---COLOUR THEME--- */
+h2 {
+	color: var(--yellow);
+}
+
+h3 {
+	color: var(--pink);
+}
+
+h4 {
+	color: var(--green)
+}
+
+p {
+	color: var(--comment-color)
+}
+
+span {
+	color: var(--cyan);
+}
+
+a {
+	color: var(--orange);
 }

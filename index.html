@@ -5,22 +5,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Jakr-s Portfolio Site</title>
 		<link href="style.css" rel="stylesheet" />
+		<link href="all.min.css" rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+		/>
 	</head>
 	<body>
 		<header>
-			<h1>jakr-s.dev</h1>
 			<nav>
-				<ul>
-					<li>
+				<h2 id="logo">jakr-s.dev</h2>
+				<ul class="nav-items">
+					<li class="nav-item">
 						<a href="#about">#about</a>
 					</li>
-					<li>
+					<li class="nav-item">
 						<a href="#projects">#projects</a>
 					</li>
 					<li>
@@ -30,60 +36,75 @@
 			</nav>
 		</header>
 		<main>
-			<section class="center-vertically" id="intro">
-				<h2>Hi, my name is <span>Jak Rhodes-Smith</span> 👋</h2>
-				<h3>Full Stack Developer</h3>
-				<p>
-					//Currently Studying:<br />
-					//Software Development in JavaScript<br />
-					//@Northcoders
-				</p>
-				<img src="placeholder.png" />
+			<section id="intro">
+				<div class="intro-container">
+					<div class="intro-text-container">
+						<h3>Hi, my name is <span>Jak Rhodes-Smith</span> 👋</h3>
+						<h4>Full Stack Developer</h4>
+						<p>
+							// Currently Studying:<br />
+							// Software Development in JavaScript<br />
+							// @Northcoders
+						</p>
+					</div>
+					<img src="/images/pfp.png" class="pfp" />
+				</div>
 			</section>
-			<section class="center-vertically" id="projects">
-				<details>
-					<summary>
-						<h3>Project One</h3>
+			<section id="projects">
+				<details class="project">
+					<summary class="project-title">
+						<h3>Fortune Teller</h3>
 					</summary>
-					<p>
-						Irure laborum id esse sunt exercitation dolor consequat. Sint
-						occaecat mollit amet excepteur magna elit laboris eu irure ex
-						consequat ut nisi. Sunt occaecat deserunt consectetur deserunt. Ex
-						mollit cillum cupidatat labore. Occaecat commodo et ut laborum ad
-						pariatur ad id reprehenderit irure Lorem id. Est officia sit magna
-						dolore ex labore cillum nisi voluptate commodo.
+					<img src="/images/fortune-teller-example.png" class="project-image" />
+					<p class="project-description">
+						A simple exercise using JavaScript that gives the user a randomly
+						generated fortune.
 					</p>
 				</details>
-				<details>
-					<summary>
-						<h3>Project Two</h3>
+				<details class="project">
+					<summary class="project-title">
+						<h3>Example</h3>
 					</summary>
-					<p>
-						Irure laborum id esse sunt exercitation dolor consequat. Sint
-						occaecat mollit amet excepteur magna elit laboris eu irure ex
-						consequat ut nisi. Sunt occaecat deserunt consectetur deserunt. Ex
-						mollit cillum cupidatat labore. Occaecat commodo et ut laborum ad
-						pariatur ad id reprehenderit irure Lorem id. Est officia sit magna
-						dolore ex labore cillum nisi voluptate commodo.
+					<img src="placeholder.png" class="project-image" />
+					<p class="project-description">
+						A simple exercise using JavaScript that gives the user a randomly
+						generated fortune.
 					</p>
 				</details>
-				<details>
-					<summary>
-						<h3>Project Three</h3>
+				<details class="project">
+					<summary class="project-title">
+						<h3>Example</h3>
 					</summary>
-					<p>
-						Irure laborum id esse sunt exercitation dolor consequat. Sint
-						occaecat mollit amet excepteur magna elit laboris eu irure ex
-						consequat ut nisi. Sunt occaecat deserunt consectetur deserunt. Ex
-						mollit cillum cupidatat labore. Occaecat commodo et ut laborum ad
-						pariatur ad id reprehenderit irure Lorem id. Est officia sit magna
-						dolore ex labore cillum nisi voluptate commodo.
+					<img src="placeholder.png" class="project-image" />
+					<p class="project-description">
+						A simple exercise using JavaScript that gives the user a randomly
+						generated fortune.
 					</p>
 				</details>
 			</section>
-			<section>
+			<section id="skills">
 				<h3>Skills</h3>
+				<div class="skills-container">
+					
+					<i class="devicon-html5-plain"></i>
+          
+					
+					<i class="devicon-css3-plain"></i>
+          
+					<i class="devicon-javascript-plain"></i>
+
+					<i class="devicon-python-plain"></i>
+          
+					<i class="devicon-git-plain "></i>
+					<i class="devicon-github-plain"></i>
+
+					<i class="devicon-bash-plain"></i>
+          
+				</div>
 			</section>
+			<footer>
+				<a href="mailto:contact@jakr-s.dev">contact@jakr-s.dev</a>
+			</footer>
 		</main>
 	</body>
 </html>
